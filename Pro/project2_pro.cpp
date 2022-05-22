@@ -5,7 +5,7 @@ int reg[32];
 vector<vector<string>> program;
 map <string, int>loop, bin;
 int doing = 0, oridoing = 0;
-ofstream out("project2_proOutput2.txt", ios::out);
+ofstream out("./Pro/project2_proOutput2.txt", ios::out);
 bool NorT = false;
 void build() {
 	bin["000"] = 1, bin["001"] = 2;
@@ -74,7 +74,7 @@ string change_state(string pre, bool now) {
 	}
 }
 int main() {
-	fstream in("../testData/test2.txt", ios::in);
+	fstream in("./testData/test2.txt", ios::in);
 	memset(reg, sizeof(reg), 0);
 	string s,t;
 	int times = 0;
@@ -84,14 +84,15 @@ int main() {
 	cin >> entryNum;
 	cout << "Input File: \n";
 	cout << "============================================\n";
-	while (getline(in, s)) {
-		cout << s << endl;
+	while (getline(in, s)) {		
 		vector<string> ins;
 		string buf = "";
+		cout << s << endl;
+		if (s.find(';') != string::npos)
+			s.erase(s.find(';'), s.size() - s.find(';'));
+		
 		stringstream ss(s);
-		while (ss >> t) {
-			if (t == ";")
-				break;
+		while (ss >> t) {			
 			ins.push_back(t);
 		}			
 		ss.clear();

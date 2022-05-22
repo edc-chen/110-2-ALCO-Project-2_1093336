@@ -1,366 +1,366 @@
 Enter entry number: Input File: 
 ============================================
-0x110           addi R1,R0,16  //R1=16
-0x114           addi  R2,R0,0 //R2=0
+0x110           addi R1,R0,16;  //R1=16
+0x114           addi  R2,R0,0; //R2=0
         LoopI:
-0x118           beq R1,R2,EndLoopI //R1==R2 EndLoopI
-0x11C           addi R2,R2,1 //R2+=1
-0x120   beq R0,R0,LoopI //Go back to LoopI
+0x118           beq R1,R2,EndLoopI; //R1==R2 EndLoopI
+0x11C           addi R2,R2,1; //R2+=1
+0x120   beq R0,R0,LoopI; //Go back to LoopI
         EndLoopI:
 ============================================
 
 ============================================
-Inst. : addi R1,R0,16 //R1=16 
+Inst. : addi R1,R0,16 
 Use Entry: 0
 Entry 0 : (000, SN, SN, SN, SN, SN, SN, SN, SN)
 Entry 1 : (000, SN, SN, SN, SN, SN, SN, SN, SN)
 N N Predict Success
 Misprediction: 0
 ============================================
-Inst. : addi R2,R0,0 //R2=0 
+Inst. : addi R2,R0,0 
 Use Entry: 1
 Entry 0 : (000, SN, SN, SN, SN, SN, SN, SN, SN)
 Entry 1 : (000, SN, SN, SN, SN, SN, SN, SN, SN)
 N N Predict Success
 Misprediction: 0
 ============================================
-Inst. : beq R1,R2,EndLoopI //R1==R2 EndLoopI 
+Inst. : beq R1,R2,EndLoopI 
 Use Entry: 0
 Entry 0 : (000, SN, SN, SN, SN, SN, SN, SN, SN)
 Entry 1 : (000, SN, SN, SN, SN, SN, SN, SN, SN)
 N N Predict Success
 Misprediction: 0
 ============================================
-Inst. : addi R2,R2,1 //R2+=1 
+Inst. : addi R2,R2,1 
 Use Entry: 1
 Entry 0 : (000, SN, SN, SN, SN, SN, SN, SN, SN)
 Entry 1 : (000, SN, SN, SN, SN, SN, SN, SN, SN)
 N N Predict Success
 Misprediction: 0
 ============================================
-Inst. : beq R0,R0,LoopI //Go back to LoopI 
+Inst. : beq R0,R0,LoopI 
 Use Entry: 0
 Entry 0 : (000, SN, SN, SN, SN, SN, SN, SN, SN)
 Entry 1 : (000, SN, SN, SN, SN, SN, SN, SN, SN)
 N T Predict Fail
 Misprediction: 1
 ============================================
-Inst. : beq R1,R2,EndLoopI //R1==R2 EndLoopI 
+Inst. : beq R1,R2,EndLoopI 
 Use Entry: 0
 Entry 0 : (001, WN, SN, SN, SN, SN, SN, SN, SN)
 Entry 1 : (000, SN, SN, SN, SN, SN, SN, SN, SN)
 N N Predict Success
 Misprediction: 1
 ============================================
-Inst. : addi R2,R2,1 //R2+=1 
+Inst. : addi R2,R2,1 
 Use Entry: 1
 Entry 0 : (010, WN, SN, SN, SN, SN, SN, SN, SN)
 Entry 1 : (000, SN, SN, SN, SN, SN, SN, SN, SN)
 N N Predict Success
 Misprediction: 0
 ============================================
-Inst. : beq R0,R0,LoopI //Go back to LoopI 
+Inst. : beq R0,R0,LoopI 
 Use Entry: 0
 Entry 0 : (010, WN, SN, SN, SN, SN, SN, SN, SN)
 Entry 1 : (000, SN, SN, SN, SN, SN, SN, SN, SN)
 N T Predict Fail
 Misprediction: 2
 ============================================
-Inst. : beq R1,R2,EndLoopI //R1==R2 EndLoopI 
+Inst. : beq R1,R2,EndLoopI 
 Use Entry: 0
 Entry 0 : (101, WN, SN, WN, SN, SN, SN, SN, SN)
 Entry 1 : (000, SN, SN, SN, SN, SN, SN, SN, SN)
 N N Predict Success
 Misprediction: 2
 ============================================
-Inst. : addi R2,R2,1 //R2+=1 
+Inst. : addi R2,R2,1 
 Use Entry: 1
 Entry 0 : (010, WN, SN, WN, SN, SN, SN, SN, SN)
 Entry 1 : (000, SN, SN, SN, SN, SN, SN, SN, SN)
 N N Predict Success
 Misprediction: 0
 ============================================
-Inst. : beq R0,R0,LoopI //Go back to LoopI 
+Inst. : beq R0,R0,LoopI 
 Use Entry: 0
 Entry 0 : (010, WN, SN, WN, SN, SN, SN, SN, SN)
 Entry 1 : (000, SN, SN, SN, SN, SN, SN, SN, SN)
 N T Predict Fail
 Misprediction: 3
 ============================================
-Inst. : beq R1,R2,EndLoopI //R1==R2 EndLoopI 
+Inst. : beq R1,R2,EndLoopI 
 Use Entry: 0
 Entry 0 : (101, WN, SN, WT, SN, SN, SN, SN, SN)
 Entry 1 : (000, SN, SN, SN, SN, SN, SN, SN, SN)
 N N Predict Success
 Misprediction: 3
 ============================================
-Inst. : addi R2,R2,1 //R2+=1 
+Inst. : addi R2,R2,1 
 Use Entry: 1
 Entry 0 : (010, WN, SN, WT, SN, SN, SN, SN, SN)
 Entry 1 : (000, SN, SN, SN, SN, SN, SN, SN, SN)
 N N Predict Success
 Misprediction: 0
 ============================================
-Inst. : beq R0,R0,LoopI //Go back to LoopI 
+Inst. : beq R0,R0,LoopI 
 Use Entry: 0
 Entry 0 : (010, WN, SN, WT, SN, SN, SN, SN, SN)
 Entry 1 : (000, SN, SN, SN, SN, SN, SN, SN, SN)
 T T Predict Success
 Misprediction: 3
 ============================================
-Inst. : beq R1,R2,EndLoopI //R1==R2 EndLoopI 
+Inst. : beq R1,R2,EndLoopI 
 Use Entry: 0
 Entry 0 : (101, WN, SN, ST, SN, SN, SN, SN, SN)
 Entry 1 : (000, SN, SN, SN, SN, SN, SN, SN, SN)
 N N Predict Success
 Misprediction: 3
 ============================================
-Inst. : addi R2,R2,1 //R2+=1 
+Inst. : addi R2,R2,1 
 Use Entry: 1
 Entry 0 : (010, WN, SN, ST, SN, SN, SN, SN, SN)
 Entry 1 : (000, SN, SN, SN, SN, SN, SN, SN, SN)
 N N Predict Success
 Misprediction: 0
 ============================================
-Inst. : beq R0,R0,LoopI //Go back to LoopI 
+Inst. : beq R0,R0,LoopI 
 Use Entry: 0
 Entry 0 : (010, WN, SN, ST, SN, SN, SN, SN, SN)
 Entry 1 : (000, SN, SN, SN, SN, SN, SN, SN, SN)
 T T Predict Success
 Misprediction: 3
 ============================================
-Inst. : beq R1,R2,EndLoopI //R1==R2 EndLoopI 
+Inst. : beq R1,R2,EndLoopI 
 Use Entry: 0
 Entry 0 : (101, WN, SN, ST, SN, SN, SN, SN, SN)
 Entry 1 : (000, SN, SN, SN, SN, SN, SN, SN, SN)
 N N Predict Success
 Misprediction: 3
 ============================================
-Inst. : addi R2,R2,1 //R2+=1 
+Inst. : addi R2,R2,1 
 Use Entry: 1
 Entry 0 : (010, WN, SN, ST, SN, SN, SN, SN, SN)
 Entry 1 : (000, SN, SN, SN, SN, SN, SN, SN, SN)
 N N Predict Success
 Misprediction: 0
 ============================================
-Inst. : beq R0,R0,LoopI //Go back to LoopI 
+Inst. : beq R0,R0,LoopI 
 Use Entry: 0
 Entry 0 : (010, WN, SN, ST, SN, SN, SN, SN, SN)
 Entry 1 : (000, SN, SN, SN, SN, SN, SN, SN, SN)
 T T Predict Success
 Misprediction: 3
 ============================================
-Inst. : beq R1,R2,EndLoopI //R1==R2 EndLoopI 
+Inst. : beq R1,R2,EndLoopI 
 Use Entry: 0
 Entry 0 : (101, WN, SN, ST, SN, SN, SN, SN, SN)
 Entry 1 : (000, SN, SN, SN, SN, SN, SN, SN, SN)
 N N Predict Success
 Misprediction: 3
 ============================================
-Inst. : addi R2,R2,1 //R2+=1 
+Inst. : addi R2,R2,1 
 Use Entry: 1
 Entry 0 : (010, WN, SN, ST, SN, SN, SN, SN, SN)
 Entry 1 : (000, SN, SN, SN, SN, SN, SN, SN, SN)
 N N Predict Success
 Misprediction: 0
 ============================================
-Inst. : beq R0,R0,LoopI //Go back to LoopI 
+Inst. : beq R0,R0,LoopI 
 Use Entry: 0
 Entry 0 : (010, WN, SN, ST, SN, SN, SN, SN, SN)
 Entry 1 : (000, SN, SN, SN, SN, SN, SN, SN, SN)
 T T Predict Success
 Misprediction: 3
 ============================================
-Inst. : beq R1,R2,EndLoopI //R1==R2 EndLoopI 
+Inst. : beq R1,R2,EndLoopI 
 Use Entry: 0
 Entry 0 : (101, WN, SN, ST, SN, SN, SN, SN, SN)
 Entry 1 : (000, SN, SN, SN, SN, SN, SN, SN, SN)
 N N Predict Success
 Misprediction: 3
 ============================================
-Inst. : addi R2,R2,1 //R2+=1 
+Inst. : addi R2,R2,1 
 Use Entry: 1
 Entry 0 : (010, WN, SN, ST, SN, SN, SN, SN, SN)
 Entry 1 : (000, SN, SN, SN, SN, SN, SN, SN, SN)
 N N Predict Success
 Misprediction: 0
 ============================================
-Inst. : beq R0,R0,LoopI //Go back to LoopI 
+Inst. : beq R0,R0,LoopI 
 Use Entry: 0
 Entry 0 : (010, WN, SN, ST, SN, SN, SN, SN, SN)
 Entry 1 : (000, SN, SN, SN, SN, SN, SN, SN, SN)
 T T Predict Success
 Misprediction: 3
 ============================================
-Inst. : beq R1,R2,EndLoopI //R1==R2 EndLoopI 
+Inst. : beq R1,R2,EndLoopI 
 Use Entry: 0
 Entry 0 : (101, WN, SN, ST, SN, SN, SN, SN, SN)
 Entry 1 : (000, SN, SN, SN, SN, SN, SN, SN, SN)
 N N Predict Success
 Misprediction: 3
 ============================================
-Inst. : addi R2,R2,1 //R2+=1 
+Inst. : addi R2,R2,1 
 Use Entry: 1
 Entry 0 : (010, WN, SN, ST, SN, SN, SN, SN, SN)
 Entry 1 : (000, SN, SN, SN, SN, SN, SN, SN, SN)
 N N Predict Success
 Misprediction: 0
 ============================================
-Inst. : beq R0,R0,LoopI //Go back to LoopI 
+Inst. : beq R0,R0,LoopI 
 Use Entry: 0
 Entry 0 : (010, WN, SN, ST, SN, SN, SN, SN, SN)
 Entry 1 : (000, SN, SN, SN, SN, SN, SN, SN, SN)
 T T Predict Success
 Misprediction: 3
 ============================================
-Inst. : beq R1,R2,EndLoopI //R1==R2 EndLoopI 
+Inst. : beq R1,R2,EndLoopI 
 Use Entry: 0
 Entry 0 : (101, WN, SN, ST, SN, SN, SN, SN, SN)
 Entry 1 : (000, SN, SN, SN, SN, SN, SN, SN, SN)
 N N Predict Success
 Misprediction: 3
 ============================================
-Inst. : addi R2,R2,1 //R2+=1 
+Inst. : addi R2,R2,1 
 Use Entry: 1
 Entry 0 : (010, WN, SN, ST, SN, SN, SN, SN, SN)
 Entry 1 : (000, SN, SN, SN, SN, SN, SN, SN, SN)
 N N Predict Success
 Misprediction: 0
 ============================================
-Inst. : beq R0,R0,LoopI //Go back to LoopI 
+Inst. : beq R0,R0,LoopI 
 Use Entry: 0
 Entry 0 : (010, WN, SN, ST, SN, SN, SN, SN, SN)
 Entry 1 : (000, SN, SN, SN, SN, SN, SN, SN, SN)
 T T Predict Success
 Misprediction: 3
 ============================================
-Inst. : beq R1,R2,EndLoopI //R1==R2 EndLoopI 
+Inst. : beq R1,R2,EndLoopI 
 Use Entry: 0
 Entry 0 : (101, WN, SN, ST, SN, SN, SN, SN, SN)
 Entry 1 : (000, SN, SN, SN, SN, SN, SN, SN, SN)
 N N Predict Success
 Misprediction: 3
 ============================================
-Inst. : addi R2,R2,1 //R2+=1 
+Inst. : addi R2,R2,1 
 Use Entry: 1
 Entry 0 : (010, WN, SN, ST, SN, SN, SN, SN, SN)
 Entry 1 : (000, SN, SN, SN, SN, SN, SN, SN, SN)
 N N Predict Success
 Misprediction: 0
 ============================================
-Inst. : beq R0,R0,LoopI //Go back to LoopI 
+Inst. : beq R0,R0,LoopI 
 Use Entry: 0
 Entry 0 : (010, WN, SN, ST, SN, SN, SN, SN, SN)
 Entry 1 : (000, SN, SN, SN, SN, SN, SN, SN, SN)
 T T Predict Success
 Misprediction: 3
 ============================================
-Inst. : beq R1,R2,EndLoopI //R1==R2 EndLoopI 
+Inst. : beq R1,R2,EndLoopI 
 Use Entry: 0
 Entry 0 : (101, WN, SN, ST, SN, SN, SN, SN, SN)
 Entry 1 : (000, SN, SN, SN, SN, SN, SN, SN, SN)
 N N Predict Success
 Misprediction: 3
 ============================================
-Inst. : addi R2,R2,1 //R2+=1 
+Inst. : addi R2,R2,1 
 Use Entry: 1
 Entry 0 : (010, WN, SN, ST, SN, SN, SN, SN, SN)
 Entry 1 : (000, SN, SN, SN, SN, SN, SN, SN, SN)
 N N Predict Success
 Misprediction: 0
 ============================================
-Inst. : beq R0,R0,LoopI //Go back to LoopI 
+Inst. : beq R0,R0,LoopI 
 Use Entry: 0
 Entry 0 : (010, WN, SN, ST, SN, SN, SN, SN, SN)
 Entry 1 : (000, SN, SN, SN, SN, SN, SN, SN, SN)
 T T Predict Success
 Misprediction: 3
 ============================================
-Inst. : beq R1,R2,EndLoopI //R1==R2 EndLoopI 
+Inst. : beq R1,R2,EndLoopI 
 Use Entry: 0
 Entry 0 : (101, WN, SN, ST, SN, SN, SN, SN, SN)
 Entry 1 : (000, SN, SN, SN, SN, SN, SN, SN, SN)
 N N Predict Success
 Misprediction: 3
 ============================================
-Inst. : addi R2,R2,1 //R2+=1 
+Inst. : addi R2,R2,1 
 Use Entry: 1
 Entry 0 : (010, WN, SN, ST, SN, SN, SN, SN, SN)
 Entry 1 : (000, SN, SN, SN, SN, SN, SN, SN, SN)
 N N Predict Success
 Misprediction: 0
 ============================================
-Inst. : beq R0,R0,LoopI //Go back to LoopI 
+Inst. : beq R0,R0,LoopI 
 Use Entry: 0
 Entry 0 : (010, WN, SN, ST, SN, SN, SN, SN, SN)
 Entry 1 : (000, SN, SN, SN, SN, SN, SN, SN, SN)
 T T Predict Success
 Misprediction: 3
 ============================================
-Inst. : beq R1,R2,EndLoopI //R1==R2 EndLoopI 
+Inst. : beq R1,R2,EndLoopI 
 Use Entry: 0
 Entry 0 : (101, WN, SN, ST, SN, SN, SN, SN, SN)
 Entry 1 : (000, SN, SN, SN, SN, SN, SN, SN, SN)
 N N Predict Success
 Misprediction: 3
 ============================================
-Inst. : addi R2,R2,1 //R2+=1 
+Inst. : addi R2,R2,1 
 Use Entry: 1
 Entry 0 : (010, WN, SN, ST, SN, SN, SN, SN, SN)
 Entry 1 : (000, SN, SN, SN, SN, SN, SN, SN, SN)
 N N Predict Success
 Misprediction: 0
 ============================================
-Inst. : beq R0,R0,LoopI //Go back to LoopI 
+Inst. : beq R0,R0,LoopI 
 Use Entry: 0
 Entry 0 : (010, WN, SN, ST, SN, SN, SN, SN, SN)
 Entry 1 : (000, SN, SN, SN, SN, SN, SN, SN, SN)
 T T Predict Success
 Misprediction: 3
 ============================================
-Inst. : beq R1,R2,EndLoopI //R1==R2 EndLoopI 
+Inst. : beq R1,R2,EndLoopI 
 Use Entry: 0
 Entry 0 : (101, WN, SN, ST, SN, SN, SN, SN, SN)
 Entry 1 : (000, SN, SN, SN, SN, SN, SN, SN, SN)
 N N Predict Success
 Misprediction: 3
 ============================================
-Inst. : addi R2,R2,1 //R2+=1 
+Inst. : addi R2,R2,1 
 Use Entry: 1
 Entry 0 : (010, WN, SN, ST, SN, SN, SN, SN, SN)
 Entry 1 : (000, SN, SN, SN, SN, SN, SN, SN, SN)
 N N Predict Success
 Misprediction: 0
 ============================================
-Inst. : beq R0,R0,LoopI //Go back to LoopI 
+Inst. : beq R0,R0,LoopI 
 Use Entry: 0
 Entry 0 : (010, WN, SN, ST, SN, SN, SN, SN, SN)
 Entry 1 : (000, SN, SN, SN, SN, SN, SN, SN, SN)
 T T Predict Success
 Misprediction: 3
 ============================================
-Inst. : beq R1,R2,EndLoopI //R1==R2 EndLoopI 
+Inst. : beq R1,R2,EndLoopI 
 Use Entry: 0
 Entry 0 : (101, WN, SN, ST, SN, SN, SN, SN, SN)
 Entry 1 : (000, SN, SN, SN, SN, SN, SN, SN, SN)
 N N Predict Success
 Misprediction: 3
 ============================================
-Inst. : addi R2,R2,1 //R2+=1 
+Inst. : addi R2,R2,1 
 Use Entry: 1
 Entry 0 : (010, WN, SN, ST, SN, SN, SN, SN, SN)
 Entry 1 : (000, SN, SN, SN, SN, SN, SN, SN, SN)
 N N Predict Success
 Misprediction: 0
 ============================================
-Inst. : beq R0,R0,LoopI //Go back to LoopI 
+Inst. : beq R0,R0,LoopI 
 Use Entry: 0
 Entry 0 : (010, WN, SN, ST, SN, SN, SN, SN, SN)
 Entry 1 : (000, SN, SN, SN, SN, SN, SN, SN, SN)
 T T Predict Success
 Misprediction: 3
 ============================================
-Inst. : beq R1,R2,EndLoopI //R1==R2 EndLoopI 
+Inst. : beq R1,R2,EndLoopI 
 Use Entry: 0
 Entry 0 : (101, WN, SN, ST, SN, SN, SN, SN, SN)
 Entry 1 : (000, SN, SN, SN, SN, SN, SN, SN, SN)
