@@ -82,6 +82,7 @@ int main() {
 	int entryNum;
 	cout << "Enter entry number: ";
 	cin >> entryNum;
+	cout << entryNum << endl;
 	cout << "Input File: \n";
 	cout << "============================================\n";
 	while (getline(in, s)) {		
