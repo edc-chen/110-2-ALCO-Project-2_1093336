@@ -1,7 +1,7 @@
 # Project-2 **3-bit History Predictor**
 
 ## 詳細程式碼說明連結
-待補
+(https://youtu.be/WiS_WKwDBwk)
 ## 資料說明
 * **./Pro/project2_proOutput.txt** 對應為 **./testData/test.txt** 的輸出 
   - 此筆測試資料為 **HackMD** 上面的範例Code但是因為沒有製作 **li** 所以用 **addi** 替換
