@@ -27,7 +27,8 @@ add, addi, and, beq, bne
 
 ## 範例執行結果
 ```
-Enter entry number: Input File: 
+Enter entry number: 2
+Input File: 
 ============================================
 0x110           addi R1,R0,16;  //R1=16
 0x114           addi  R2,R0,0; //R2=0
@@ -399,4 +400,5 @@ Misprediction: 4
 Predictors:
 Entry 0 : (011, WN, SN, ST, SN, SN, WN, SN, SN)Misprediction: 4
 Entry 1 : (000, SN, SN, SN, SN, SN, SN, SN, SN)Misprediction: 0
+
 ```
