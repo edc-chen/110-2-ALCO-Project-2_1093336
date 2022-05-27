@@ -1,5 +1,5 @@
-# 110-2-ALCO-Project-2_1093336
-* 3-bit History Predictor
+# Project-2_3-bit History Predictor
+
 ## 詳細程式碼說明連結
 待補
 ## 資料說明
